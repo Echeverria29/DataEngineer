@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Data Engineer</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/LOGO.jpg" type="image/x-icon" />
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="index.html">
+		Data Engineer </a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="index.html">Inicio</a>
+			</li>
+			<li>
+			<a href="portfolio-item.html">Proyectos</a>
+			</li>
+			<li>
+			<a href="https://www.youtube.com/@ETLandMore" target="_blank">Youtube</a>
+			</li>
+			<li>
+			<a href="contact.html">Contactame</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="brand-heading">Orlando Echeverría Hernández  Duoc UC</h1>
+				<p class="intro-text" style="margin-bottom: 0px;" >
+					Presiona aquí
+				</p>
+				<a href="#about" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i> </a>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<script>
+	// Array con las URLs de tus imágenes
+	const images = [
+		'img/1h.jpeg',
+		'img/4h.jpg',
+		'img/3h.jpeg'
+	];
+
+	// Selecciona una imagen aleatoria
+	function getRandomImage() {
+		const randomIndex = Math.floor(Math.random() * images.length);
+		return images[randomIndex];
+	}
+
+	// Aplica la imagen aleatoria al fondo
+	const introElement = document.querySelector('.intro');
+	introElement.style.backgroundImage = `url('${getRandomImage()}')`;
+</script>
+<!-- About Section -->
+<section id="about">
+<div class="container content-section text-center">
+	<div class="row" style="margin-top: -100px;">
+		<h2 >Sobre mi</h2>
+		<div class="col-lg-8 col-lg-offset-2" style="margin-top: -20px;">
+			<p>
+				Estoy cursando mi último año en Duoc UC. Poseo conocimientos en:
+
+				Google cloud platform, Cloud functions, Cloud storage, Data Flow y Big Query. También en procesos ETL y Python. Tengo diversos proyectos académicos y propios que podre mostrar en este sitio personal.
+				Estoy buscando oportunidades para crecer profesionalmente en esta hermosa carrera.
+			</p>
+
+			<h3 style="margin-top: -30;">Descarga mi CV aquí</h3>
+			<p style="margin-top: -30px;">
+				<a href="#" id="enlaceDescarga"  class="btnghost"><i class="fa fa-download" ></i> Curriculum Vitae</a>
+			</p>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var enlaceDescarga = document.getElementById('enlaceDescarga');
+					enlaceDescarga.addEventListener('click', function(event) {
+						// Detiene el comportamiento predeterminado del enlace
+						event.preventDefault();
+						
+						// URL del archivo PDF
+						var archivoPDF = 'https://drive.google.com/uc?export=download&id=16A2cb59PcfIgQSGjfdDGrxuvNP9y03Gj';
+						
+						// Crea un elemento de enlace temporal
+						var enlaceTemporal = document.createElement('a');
+						enlaceTemporal.style.display = 'none';
+						enlaceTemporal.href = archivoPDF;
+						enlaceTemporal.setAttribute('download', 'Orlando_CV_3.pdf');
+	
+						// Agrega el enlace temporal al cuerpo del documento
+						document.body.appendChild(enlaceTemporal);
+						
+						// Simula un clic en el enlace temporal para comenzar la descarga
+						enlaceTemporal.click();
+						
+						// Elimina el enlace temporal del cuerpo del documento
+						document.body.removeChild(enlaceTemporal);
+					});
+				});
+			</script>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+</section>
+<section id="portfolio" style="margin-top: -150px;">
+	<div class="gallery">
+		<ul>
+			<li class="col-md-3">
+			<a href="portfolio-item.html">
+			<img src="img/index/ark2.png" alt="">
+			</a>
+			</li>
+			<li class="col-md-3">
+			<a href="portfolio-item.html">
+			<img src="img/index/escrafinal.png" alt="">
+			</a>
+			</li>
+			<li class="col-md-3">
+			<a href="portfolio-item.html">
+			<img src="img/index/ARtutorial.png" alt="">
+			</a>
+			</li>
+			<li class="col-md-3">
+				<a href="portfolio-item.html">
+				<img src="img/index/ETL22.jpeg" alt="">
+				</a>
+				</li>
+		</ul>
+	</div>
+	</section>
+<!-- Contact Section -->
+<section id="contact" style="margin-top: -120px;">
+<div class="container content-section text-center">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+
+			<ul class="list-inline banner-social-buttons">
+				<li>
+				
+				</li>
+				<li>
+				<a href="https://www.youtube.com/@ETLandMore" class="btn btnghost btn-lg" target="_blank"><i class="fa fa-youtube fa-fw"></i><span class="network-name">Canal de Youtube</span></a>
+				</li>
+				<li>
+				
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		Copyright &copy; Your Website 2015<br/>
+		"Aries" Template by WowThemes.net
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Data Engineer</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/estilos.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="img/LOGO.jpg" type="image/x-icon" />
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="index.html">
+		ARIES
+		</a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="index.html">Home</a>
+			</li>
+			<li>
+			<a href="portfolio-item.html">Singe Project</a>
+			</li>
+			<li>
+			<a href="page-sample.html">Page Sample</a>
+			</li>
+			<li>
+			<a href="contact.html">Hire me</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2" style="margin-top: 130px;" >
+				<h1 class="brand-heading"></h1>
+				
+				<p class="intro-text" style="margin-bottom: 0px;">
+					Presiona aquí
+				</p>
+				<a href="#pelis" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i> </a>
+			
+			
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<script>
+	// Array con las URLs de tus imágenes
+	const images = [
+		'img/11.jpeg',
+		'img/22.jpeg',
+		'img/33.jpeg'
+	];
+
+	// Selecciona una imagen aleatoria
+	function getRandomImage() {
+		const randomIndex = Math.floor(Math.random() * images.length);
+		return images[randomIndex];
+	}
+
+	// Aplica la imagen aleatoria al fondo
+	const introElement = document.querySelector('.intro');
+	introElement.style.backgroundImage = `url('${getRandomImage()}')`;
+</script>
+<!-- Project Details Section -->
+<div class="peliculas-recomendadas contenedor " style="background-color: aliceblue;" id="pelis">
+	<div class="contenedor-titulo-controles">
+	  
+	</div>
+	<h3 style="text-align: center; font-size: 40px; color: black;" >Proyectos completos </h3>
+	<div class="contenedor-principal">
+	  
+	 
+	  <div class="contenedor-carousel">
+		<div class="carousel">
+		  <div class="pelicula" style="margin: 10px; text-align: center;">
+			<a href="https://youtu.be/JNm6-y8AAWU" target="_blank"><img src="img/ark2.png" alt=""></a>
+		   
+			<p style="color: black;">Captura de datos con cloud fuctions, almacenamiento Cloud storage bucket y Big Query</p>
+			
+		  </div>
+		
+		
+		  <div class="pelicula" style="margin: 10px; text-align: center;">
+			<a href="https://www.youtube.com/watch?v=xftSG9-5NHs&t=64s" target="_blank"><img src="img/escrafinal.png" alt=""></a>
+			<p style="color: black;" >Web scraping con python, captura de datos desde API y análisis Google Colab</p>
+			
+		  </div>
+
+		  <div class="pelicula" style="margin: 10px; text-align: center;">
+			<a href="https://github.com/Echeverria29/Enproceso/blob/main/1200x.jpg" target="_blank"><img src="img/Google-DataFlow.png" alt=""></a>
+			<p style="color: black;">Procesamiento de datos en real time con Data flow</p>
+			<p style="color: black;">Captura de datos de Api de clima y Procesamiento de datos con Data flow</p>
+		  </div>
+		 
+		</div>
+	  </div>
+
+	  
+
+	</div>
+	<h3 style="text-align: center; font-size: 40px; color: black;" >Tutoriales youtube </h3>
+	<div class="contenedor-principal">
+ 
+	  <div class="contenedor-carousel">
+		<div class="carousel">
+	   
+		
+		  <div class="pelicula" style="margin: 10px; margin-left: 45px;  text-align: center;" >
+			<a href="https://www.youtube.com/watch?v=GQ3pFDKSWQ4&list=PLLAX-TpWqCEebqEAon_D1S4btjctnh97I" target="_blank"><img src="img/skillboots.jpeg" alt=""></a>
+			<div>
+			  <p style="color: black;" > Skill boost gsp</p>
+			</div>
+		  
+			
+		  </div>
+		  
+		  <div class="pelicula" style="margin: 10px;  text-align: center;" >
+			<a href="https://www.youtube.com/watch?v=sYQvuVgALJw&t=483s" target="_blank"><img src="img/ARtutorial.png" alt=""></a>
+			<p style="color: black;" >Cloud functions, Cloud storage bucket y Big Query</p>
+			
+		  </div>
+		  
+		  <div class="pelicula" style="margin: 10px; text-align: center;">
+			<a href="https://youtu.be/zkHrWXRC5yo" target="_blank"><img src="img/dataprep.png" alt=""></a>
+			<p style="color: black;">Liempieza de datos con Data prep</p>
+		   
+		  </div>
+		 
+		</div>
+	  </div>
+
+
+	</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		Copyright &copy; Your Website 2015<br/>
+		"Aries" Template by WowThemes.net
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+</body>
+</html>
